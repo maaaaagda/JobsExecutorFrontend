@@ -1,36 +1,44 @@
 @import "./globals.scss";
 
-
 .App {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
 .App-header {
-  background-color: $color-primary;
+  background-color: $color-background;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  color: $color-primary;
+}
+
+.menu-item {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  background-color: $color-primary;
   color: $color-background;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+  font-size: $font-size-primary;
+  transition: font-size 300ms ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    font-size: $font-size-primary * 1.2;
+  }
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menu-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100vw;
+  flex-wrap: wrap;
 }
