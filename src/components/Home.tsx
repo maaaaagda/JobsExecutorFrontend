@@ -17,9 +17,9 @@ const Home: FunctionComponent<HomeProps> = ({
                 <p>{description}</p>
             </div>
             <div className='menu-items'>
-                <MenuItem name='Start new job' />
-                <MenuItem name='See defined jobs' />
-                <MenuItem name='See pending jobs' />
+                <MenuItem name='Start new job' redirectionUrl='/jobs' />
+                <MenuItem name='See defined jobs' redirectionUrl='/' />
+                <MenuItem name='See pending jobs' redirectionUrl='/' />
             </div>
         </div>
     </div>
